@@ -1,0 +1,68 @@
+Double Dare:
+issue: no good way to deal with reverse-perspective prob
+	reverse screen for examiner
+	reverse once at beginngin...
+	+25 +50 +10 -> only should be avail to current team
+		correct, wrong, dare buttons
+		on certain actions (dare), disappear
+		buttons for current team and appear
+		buttons for new team in control
+		dare -> dbl dare -> phys challenge
+		phys chall timer + normal timer
+	basically, let examiner see correct order at beg
+	and then switch to audience flipped view, and after
+	that, only have buttons avail for currently acting
+	team.
+Have additional +25/-25 buttons for every team (always vis)
+to correct scoring mistakes.
+
+Highlight current team instead of creating new buttons?
+Better way? Best way?
+
+-----------------------------------------------------------
+
+Needed tweaks:
+
+* Everything needs to be a bigger size.  Compare sizes with
+  my program.
+* Point values for everything need to be doubled.  instead
+  of 25 50 100, the increments need to be 50 100 200.  This
+  also affects the +25 and -25 buttons - they should be +50
+  and -50.
+* The "Completed" and "Failed" buttons should stay behind
+  when the Physical Challenge timer runs out.  This way if
+  a team completes the challenge at the last second we can
+  choose to give it to them.
+* When the Physical Challenge timer is being stopped, there
+  should be a +0:15 and -0:15 button next to it.  Also, the
+  default value should be 0:30.
+* The "Last Minute" control was really just for debugging;
+  this should be removed in the final program.
+
+
+"Nice" tweaks:
+
+* Change "Switch control" to "Give control".  Saying "Switch
+  control" makes me think the button will toggle it.
+* It would be nice if the window could be maximized.
+* I'd prefer "Complete" and "Incomplete" to "Completed" and
+  "Failed" --- just don't like the word "Failed".  :P
+* Can we make it so that when a player changes the timer
+  before starting the game, the game "remembers" what the
+  person put when the game is reset so they wouldn't have
+  to change it before every game?  It turns out we won't know
+  exactly how much time there is until we get to it because
+  it's our last game and we have 12 teams (6 games) to get
+  through.
+* Have the Dare, Correct, and Incorrect buttons not appear
+  until the game is started.
+
+
+
+
+
+
+
+
+
+
